@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import { AiOutlineSmile } from 'react-icons/ai';
 
 const Loading = ({ handleLoading }) => {
 
@@ -9,7 +10,7 @@ const Loading = ({ handleLoading }) => {
 	const [index, setIndex] = useState(-1);
 
 	const color= '#3e98c7'
-	const text= ['Preparando modulos', 'Iniciando app', 'Revisando proyectos', 'Bebiendo cafe', 'Bienvenido :D'];
+	const text= ['Preparing modules', 'Starting app', 'Reviewing projects', 'Drinking Coffee', 'Welcome'];
 
 	useEffect(() => {
 		counter < 1 && setTimeout(() => setCounter(c => c + 0.25), 1000);
@@ -34,7 +35,7 @@ const Loading = ({ handleLoading }) => {
 					backgroundColor: 'red',
 				  })}
 			/>
-			<span>{text.length && text[index]}</span>
+			<span>{text.length && text[index]}{index === 4 && (<div className="welcome"><AiOutlineSmile /></div>)}</span>
 		</div>
 	)
 }

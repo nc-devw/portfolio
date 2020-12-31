@@ -50,6 +50,16 @@ body {
 	margin-top: .5em;
 }
 
+.welcome {
+	display: inline;
+	padding-left: .25em;
+}
+
+.welcome svg {
+	width: 20px;
+	height: 20px;
+}
+
 .circularProgressBar-red {
 	fill: red;
 }
