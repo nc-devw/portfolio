@@ -1,8 +1,10 @@
+import React from 'react'
+
 /* Styles */
 import './homePage.css'
 
 /* Utils */
-import profile from '../../assets/img/perfil.png';
+import profile from '../../assets/img/developer.jpeg';
 import { AiOutlineWhatsApp } from 'react-icons/ai'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { AiFillGithub } from 'react-icons/ai'

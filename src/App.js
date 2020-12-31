@@ -1,6 +1,10 @@
+import React from 'react'
+
 /* Components */
+import About from './components/About';
 import HomePage from './components/HomePage';
 import Navbar from './components/Navbar'
+import Projects from './components/Projects';
 
 function App() {
 	return (
@@ -8,6 +12,8 @@ function App() {
 			<Navbar />
 			<div className="container">
 				<HomePage />
+				<Projects />
+				<About />
 			</div>
 		</div>
 	);

@@ -29,3 +29,48 @@ body {
 	padding: 0 .5em;
 	margin: 0 auto;
 }
+
+.bg-react {
+	background-color: #61dafb;
+}
+
+.bg-node {
+	background-color: #43853d;
+}
+
+.bg-js {
+	background-color: #efd81d;
+}
+
+.bg-redux {
+	background-color: #7747bc;
+}
+
+.bg-express {
+	background-color: #1B1A1F;
+	/* random */
+}
+
+.bg-sequelize {
+	background-color: #03afef;
+}
+
+.bg-postgres {
+	background-color: #305e8b;
+}
+
+.bg-mysql {
+	background-color: #005e86;
+}
+
+.bg-bootstrap {
+	background-color: #533b78;
+}
+
+.bg-php {
+	background-color: #7377ad;
+}
+
+.bg-laravel {
+	background-color: #f72c1f;
+}
