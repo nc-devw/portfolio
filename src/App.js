@@ -2,7 +2,9 @@ import React from 'react'
 
 /* Components */
 import About from './components/About';
-import HomePage from './components/HomePage';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Home from './components/Home';
 import Navbar from './components/Navbar'
 import Projects from './components/Projects';
 
@@ -11,10 +13,12 @@ function App() {
 		<div className="app">
 			<Navbar />
 			<div className="container">
-				<HomePage />
+				<Home />
 				<Projects />
 				<About />
+				<Contact />
 			</div>
+			<Footer />
 		</div>
 	);
 }

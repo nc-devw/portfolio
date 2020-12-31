@@ -1,7 +1,7 @@
 import React from 'react'
 
 /* Styles */
-import './homePage.css'
+import './home.css'
 
 /* Utils */
 import profile from '../../assets/img/developer.jpeg';
@@ -9,23 +9,23 @@ import { AiOutlineWhatsApp } from 'react-icons/ai'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { AiFillGithub } from 'react-icons/ai'
 
-const HomePage = () => {
+const Home = () => {
 	return (
-		<div className="homePage">
-			<div className="homePage__pic">
+		<section className="home" id="home">
+			<div className="home__pic">
 				<img src={profile} />
 			</div>
-			<div className="homePage__info">
-				<span>I'm web developer</span>
+			<div className="home__info">
+				<p>I'm web developer</p>
 				<h3>Ignacio Contreras</h3>
 				<ul>
-					<li><a href="https://wa.me/+542226502490" target="_blank" rel="noreferrer"><AiOutlineWhatsApp /></a></li>
 					<li><a href="https://github.com/nc-devw" target="_blank" rel="noreferrer"><AiFillGithub /></a></li>
 					<li><a href="https://www.linkedin.com/in/ignacio-contreras/" target="_blank" rel="noreferrer"><AiFillLinkedin /></a></li>
+					<li><a href="https://wa.me/+542226502490" target="_blank" rel="noreferrer"><AiOutlineWhatsApp /></a></li>
 				</ul>
 			</div>
-		</div>
+		</section>
 	)
 }
 
-export default HomePage
+export default Home

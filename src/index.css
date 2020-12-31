@@ -1,20 +1,23 @@
 :root {
-	--clr-primary: #9b5df7;
-	--clr-primary-2: #763FC7;
-	--clr-secondary: #5630E4;
-	--clr-secondary-2: #4424B9;
+	--clr-primary: #01ef01;
+	--clr-primary-2: #09c509;
+	--clr-secondary: #068606;
+	--clr-secondary-2: #046b04;
 	--clr-white: #F5F4F8;
 	--clr-middle: #7E7E7E;
 	--clr-dark: #1B1A1F;
-	--clr-warning: #F6DB2D;
-	--clr-error: #D53051;
-	--clr-success: #97DA3F;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@400;700&display=swap');
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
 }
 
 body {

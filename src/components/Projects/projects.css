@@ -2,6 +2,11 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	padding: 2em 0;
+}
+
+.projects h3 {
+	text-transform: uppercase;
 }
 
 .project {
@@ -9,10 +14,11 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	border: 1px solid var(--clr-dark);
+	border: 1px solid var(--clr-middle);
+	box-shadow: 10px 10px 0px var(--clr-primary-2);
 	border-radius: 1em;
 	padding: 1em;
-	margin: 1em 0;
+	margin: .5em 0 2em 0;
 }
 
 .project__img {
