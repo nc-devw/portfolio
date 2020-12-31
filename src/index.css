@@ -33,6 +33,27 @@ body {
 	margin: 0 auto;
 }
 
+.loading {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.loading svg {
+	width: 200px;
+	height: 200px;
+}
+
+.loading span {
+	margin-top: .5em;
+}
+
+.circularProgressBar-red {
+	fill: red;
+}
+
 .bg-react {
 	background-color: #61dafb;
 }

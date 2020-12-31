@@ -13,7 +13,7 @@ const Home = () => {
 	return (
 		<section className="home" id="home">
 			<div className="home__pic">
-				<img src={profile} />
+				<img src={profile} alt="ilustration profile pic" />
 			</div>
 			<div className="home__info">
 				<p>I'm web developer</p>
