@@ -46,10 +46,15 @@
 .home__info svg {
 	width: 40px;
 	height: 40px;
-	color: currentColor;
+	color: var(--clr-middle);
+}
+
+.home__info svg:hover {
+	color: var(--clr-white);
 }
 
 .home__info ul {
+	margin-top: 1em;
 	list-style: none;
 	display: flex;
 	justify-content: space-around;
