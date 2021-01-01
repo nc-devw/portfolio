@@ -3,86 +3,38 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 	padding: 2em 0;
 }
 
-.about_container {
-	border: 1px solid var(--clr-middle);
-	box-shadow: 10px 10px 0px var(--clr-primary-2);
-	border-radius: 1em;
-	padding: 1em;
-}
-
 .about__title {
-	text-align: center;
+	text-align: left;
 	text-transform: uppercase;
 	margin: .5em 0;
-}
-
-.about h3:nth-of-type(2) {
-	margin-top: 2em;
-}
-
-.about__detail {
-	display: flex;
-	align-items: center;
-}
-
-.about__hobbies {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	padding: 1em;
-	width: 100%;
-}
-
-.about__hobbie {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.about__hobbie svg {
-	width: 40px;
-	height: 40px;
-	color: #61dafb;
-	stroke: #61dafb;
-	fill: #61dafb;
-}
-
-.about__pic {
-	width: 150px;
-	height: 150px;
-	border-radius: 10em;
-	overflow: hidden;
-}
-
-.about__pic img {
-	width: 100%;
-	height: 100%;
-}
-
-.about__info {
-	flex: 1;
-	margin: 0 1em;
-	text-align: center;
+	font-size: 2em;
+	color: var(--clr-white)
 }
 
 .about__skills {
 	display: flex;
 	flex: 1;
 	flex-shrink: 0;
-	margin: .5em 0;
 	flex-wrap: wrap;
+	margin: .5em 0;
 	justify-content: center;
 }
 
 .about__skills span {
-	font-size: .75em;
-	font-weight: 700;
-	margin: .25em;
-	color: var(--clr-white);
-	padding: .25em 1em;
-	border-radius: 10em;
+	margin: 0 1em;
+}
+
+.about__skills span svg {
+	width: 100px;
+	height: 100px;
+	fill: var(--clr-middle)
+}
+
+.about__skills span svg:hover {
+	width: 100px;
+	height: 100px;
+	fill: var(--clr-white)
 }

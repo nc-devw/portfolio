@@ -5,7 +5,7 @@ const Footer = () => {
 	return (
 		<nav className="footer">
 			<div className="footer__copyright">
-				<span>Made with ❤ by nc-devw</span>
+				<span>Created by Ignacio Contreras</span>
 			</div>
 		</nav>
 	)

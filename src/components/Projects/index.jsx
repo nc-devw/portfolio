@@ -7,42 +7,35 @@ const Projects = () => {
 		<section className="projects" id="projects">
 			<h3>Projects</h3>
 			<div className="project">
-				<div className="project__img">
-					<img
-						src="https://nickjanetakis.com/assets/blog/cards/how-to-start-and-finish-any-web-app-project-678900795cfd6d4fa60e3655dd62ae9f61ef5e14b62ca62050e817e43e861f11.jpg"
-						alt="E-commerce"
-					/>
-				</div>
+				<h4 className="project__title">E-commerce</h4>
 				<div className="project__detail">
 					<span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, pariatur ullam a natus dolor excepturi eligendi rerum, perspiciatis ipsum nulla tenetur numquam? Laudantium laboriosam mollitia fugiat, dignissimos veniam culpa deleniti!
-					Eveniet adipisci laudantium delectus harum neque sed iusto pariatur dolore perferendis, nam ex? Assumenda iure quas consequuntur provident, amet labore asperiores iusto in accusantium velit aperiam quam ab eveniet nobis.
-					Nam consequatur est vel consectetur fuga rem. Voluptas odio dolores ab repellendus dicta minima. Recusandae, aliquid! Natus enim</span>
+					Eveniet adipisci laudantium delectus harum</span>
+				</div>
+				<div className="project__buttons">
+					<button>View Code</button>
+					<button>Open Project</button>
 				</div>
 			</div>
 			<div className="project">
-				<div className="project__img">
-					<img
-						src="https://cdn.nopio.com/wp-content/uploads/2016/05/28094946/web-development.jpg"
-						alt="WebPotter"
-					/>
-				</div>
+				<h4 className="project__title">Web Potter</h4>
 				<div className="project__detail">
 					<span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, pariatur ullam a natus dolor excepturi eligendi rerum, perspiciatis ipsum nulla tenetur numquam? Laudantium laboriosam mollitia fugiat, dignissimos veniam culpa deleniti!
-					Eveniet adipisci laudantium delectus harum neque sed iusto pariatur dolore perferendis, nam ex? Assumenda iure quas consequuntur provident, amet labore asperiores iusto in accusantium velit aperiam quam ab eveniet nobis.
-					Nam consequatur est vel consectetur fuga rem. Voluptas odio dolores ab repellendus dicta minima. Recusandae, aliquid! Natus enim</span>
+					Eveniet adipisci laudantium </span>
+				</div>
+				<div className="project__buttons">
+					<button>View Code</button>
+					<button>Open Project</button>
 				</div>
 			</div>
 			<div className="project">
-				<div className="project__img">
-					<img
-						src="https://nickjanetakis.com/assets/blog/cards/how-to-start-and-finish-any-web-app-project-678900795cfd6d4fa60e3655dd62ae9f61ef5e14b62ca62050e817e43e861f11.jpg"
-						alt="PokeApi"
-					/>
-				</div>
+				<h4 className="project__title">Potter Api</h4>
 				<div className="project__detail">
 					<span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, pariatur ullam a natus dolor excepturi eligendi rerum, perspiciatis ipsum nulla tenetur numquam? Laudantium laboriosam mollitia fugiat, dignissimos veniam culpa deleniti!
-					Eveniet adipisci laudantium delectus harum neque sed iusto pariatur dolore perferendis, nam ex? Assumenda iure quas consequuntur provident, amet labore asperiores iusto in accusantium velit aperiam quam ab eveniet nobis.
-					Nam consequatur est vel consectetur fuga rem. Voluptas odio dolores ab repellendus dicta minima. Recusandae, aliquid! Natus enim</span>
+					Eveniet adipisci laudantium delectus harum neque</span>
+				</div>
+				<div className="project__buttons">
+					<button>View Code</button>
 				</div>
 			</div>
 		</section>

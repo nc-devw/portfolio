@@ -1,5 +1,8 @@
 import React from 'react'
 import './navbar.css';
+import { MdLanguage } from 'react-icons/md'
+import { FiSun } from 'react-icons/fi'
+import { BsMoon } from 'react-icons/bs'
 
 const Navbar = () => {
 	return (
@@ -9,9 +12,13 @@ const Navbar = () => {
 			</div>
 			<ul className="navbar__links">
 				<li><a href="#home">Home</a></li>
+				<li><a href="#about">Skills</a></li>
 				<li><a href="#projects">Projects</a></li>
-				<li><a href="#about">About me</a></li>
 				<li><a href="#contact">Contact</a></li>
+			</ul>
+			<ul className="navbar__links">
+				<li><MdLanguage /></li>
+				<li><BsMoon /></li>
 			</ul>
 		</nav>
 	)

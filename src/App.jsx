@@ -23,8 +23,8 @@ function App() {
 			<Navbar />
 			<div className="container">
 				<Home />
-				<Projects />
 				<About />
+				<Projects />
 				<Contact />
 			</div>
 			<Footer />

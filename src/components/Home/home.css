@@ -22,12 +22,25 @@
 .home__info {
 	text-align: center;
 	padding-top: .5em;
+	text-transform: uppercase;
+	color: var(--clr-white);
 }
 
 .home__info h3 {
-	margin: .5em 0;
+	margin: 0;
+	font-size: 4em;
+}
+
+.home__info span {
+	margin: 0;
 	font-size: 1.5em;
-	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.home__info p {
+	margin: 0;
+	font-size: 1.2em;
+	text-transform: none;
 }
 
 .home__info svg {

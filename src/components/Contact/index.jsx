@@ -16,11 +16,6 @@ const Contact = () => {
 						<input name="email" placeholder="Email Address" />
 					</label>
 				</div>
-				<div className="contact__form-control">
-					<label>
-						<input name="subject" placeholder="Subject" />
-					</label>
-				</div>
 				<div className="contact__form-control textarea">
 					<label>
 						<textarea name="message" placeholder="Message"></textarea>

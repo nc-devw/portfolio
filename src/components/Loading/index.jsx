@@ -30,8 +30,7 @@ const Loading = ({ handleLoading }) => {
 				styles={buildStyles({
 					// Colors
 					pathColor: color,
-					textColor: '#1B1A1F',
-					trailColor: '#d6d6d6',
+					textColor: 'var(--clr-white)',
 					backgroundColor: 'red',
 				  })}
 			/>
