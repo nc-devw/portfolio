@@ -1,12 +1,11 @@
 import React from 'react'
-import './navbar.css';
 import { MdLanguage } from 'react-icons/md'
-import { FiSun } from 'react-icons/fi'
 import { BsMoon } from 'react-icons/bs'
+import { StyledNavbar } from '../../styles/styled_navbar'
 
 const Navbar = () => {
 	return (
-		<nav className="navbar">
+		<StyledNavbar className="navbar">
 			<div className="navbar__logo">
 				<h1>{'<Ignacio Contreras />'}</h1>
 			</div>
@@ -20,7 +19,7 @@ const Navbar = () => {
 				<li><MdLanguage /></li>
 				<li><BsMoon /></li>
 			</ul>
-		</nav>
+		</StyledNavbar>
 	)
 }
 

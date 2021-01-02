@@ -1,10 +1,8 @@
 import React from 'react'
-
-import './projects.css'
-
+import { StyledProjects } from '../../styles/styled_projects'
 const Projects = () => {
 	return (
-		<section className="projects" id="projects">
+		<StyledProjects id="projects">
 			<h3>Projects</h3>
 			<div className="project">
 				<h4 className="project__title">E-commerce</h4>
@@ -38,7 +36,7 @@ const Projects = () => {
 					<button>View Code</button>
 				</div>
 			</div>
-		</section>
+		</StyledProjects>
 	)
 }
 

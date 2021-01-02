@@ -6,11 +6,11 @@ import { IoLogoJavascript } from 'react-icons/io'
 import { SiRedux, SiPostgresql, SiBootstrap, SiPhp, SiLaravel } from 'react-icons/si'
 
 /* Styles */
-import './about.css'
+import { StyledAbout } from '../../styles/styled_about'
 
 const About = () => {
 	return (
-		<section className="about" id="about">
+		<StyledAbout id="about">
 			<h3 className="about__title">My skills</h3>
 				<div className="about__skills">
 					<span><GrReactjs /></span>
@@ -23,7 +23,7 @@ const About = () => {
 					<span><SiPhp/></span>
 					<span><SiLaravel/></span>
 				</div>
-		</section>
+		</StyledAbout>
 	)
 }
 

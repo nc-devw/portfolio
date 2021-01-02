@@ -1,13 +1,13 @@
 import React from 'react';
-import './footer.css';
+import { StyledFooter } from '../../styles/styled_footer';
 
 const Footer = () => {
 	return (
-		<nav className="footer">
+		<StyledFooter className="footer">
 			<div className="footer__copyright">
 				<span>Created by Ignacio Contreras</span>
 			</div>
-		</nav>
+		</StyledFooter>
 	)
 }
 

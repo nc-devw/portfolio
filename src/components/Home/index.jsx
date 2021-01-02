@@ -1,7 +1,7 @@
 import React from 'react'
 
 /* Styles */
-import './home.css'
+import { StyledHome } from '../../styles/styled_home'
 
 /* Utils */
 import { AiOutlineWhatsApp } from 'react-icons/ai'
@@ -10,7 +10,7 @@ import { AiFillGithub } from 'react-icons/ai'
 
 const Home = () => {
 	return (
-		<section className="home" id="home">
+		<StyledHome className="home" id="home">
 			<div className="home__info">
 				<h3>I'm Ignacio</h3>
 				<span>Full Stack Web Developer</span>
@@ -21,7 +21,7 @@ const Home = () => {
 					<li><a href="https://wa.me/+542226502490" target="_blank" rel="noreferrer"><AiOutlineWhatsApp /></a></li>
 				</ul>
 			</div>
-		</section>
+		</StyledHome>
 	)
 }
 
