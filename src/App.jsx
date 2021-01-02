@@ -11,23 +11,24 @@ import Projects from './components/Projects';
 
 function App() {
 	const [loading, setLoading] = useState(true)
+	const [language, setLanguage] = useState(localStorage.getItem('language') || 'es');
 
 	const handleLoading = () => {
 		setLoading(false);
 	}
-	if (loading)
-		return <Loading handleLoading={handleLoading}/>
+	if (loading) return <Loading handleLoading={handleLoading} />
+
 
 	return (
 		<div className="app">
-			<Navbar />
+			<Navbar language={language} setLanguage={setLanguage} />
 			<div className="container">
-				<Home />
-				<About />
-				<Projects />
-				<Contact />
+				<Home language={language} />
+				<About language={language} />
+				<Projects language={language} />
+				<Contact language={language} />
 			</div>
-			<Footer />
+			<Footer language={language} />
 		</div>
 	);
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 import { StyledContact } from '../../styles/styled_contact';
-
-const Contact = () => {
+import strings from './language'
+const Contact = ({ language }) => {
 	return (
 		<StyledContact id="contact">
-			<h3>Contact</h3>
+			<h3>{strings[language].title}</h3>
 			<form className="contact__form">
 				<div className="contact__form-control">
 					<label>
@@ -21,7 +21,7 @@ const Contact = () => {
 						<textarea name="message" placeholder="Message"></textarea>
 					</label>
 				</div>
-				<input className="contact__form-button" type="submit" value="Submit" />
+				<input className="contact__form-button" type="submit" value={strings[language].submit} />
 			</form>
 		</StyledContact>
 	)

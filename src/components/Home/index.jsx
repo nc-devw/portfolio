@@ -8,13 +8,15 @@ import { AiOutlineWhatsApp } from 'react-icons/ai'
 import { AiFillLinkedin } from 'react-icons/ai'
 import { AiFillGithub } from 'react-icons/ai'
 
-const Home = () => {
+import strings from './language'
+
+const Home = ({ language }) => {
 	return (
 		<StyledHome className="home" id="home">
 			<div className="home__info">
-				<h3>I'm Ignacio</h3>
+				<h3>{strings[language].title}</h3>
 				<span>Full Stack Web Developer</span>
-				<p>Hello, I am a developer and student. I Love programming a lot of things such as: websites, bots, applications and more. I am a self taught developer and still learning new technologies every day, mostly focusing on React, Node and SQL.</p>
+				<p>{strings[language].description}</p>
 				<ul>
 					<li><a href="https://github.com/nc-devw" target="_blank" rel="noreferrer"><AiFillGithub /></a></li>
 					<li><a href="https://www.linkedin.com/in/ignacio-contreras/" target="_blank" rel="noreferrer"><AiFillLinkedin /></a></li>

@@ -36,4 +36,35 @@ export const StyledNavbar = styled.nav`
 		text-decoration: none;
 		color: var(--clr-white);
 	}
+
+	.navbar__options {
+			color: var(--clr-white);
+			list-style: none;
+			display: flex;
+			align-items: center;
+			flex-basis: 300px;
+
+			& > li {
+				position: relative;
+			}
+
+			& > li + li { margin-left: 3em; }
+
+			li, li > button {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+			}
+
+			li:hover { color: var(--clr-middle); }
+
+			button {
+				background: none;
+				border: none;
+				color: inherit;
+				font: inherit;
+			}
+		}
 `

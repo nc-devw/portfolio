@@ -1,9 +1,10 @@
 import React from 'react'
 import { StyledProjects } from '../../styles/styled_projects'
-const Projects = () => {
+import strings from './language'
+const Projects = ({ language }) => {
 	return (
 		<StyledProjects id="projects">
-			<h3>Projects</h3>
+			<h3>{strings[language].title}</h3>
 			<div className="project">
 				<h4 className="project__title">E-commerce</h4>
 				<div className="project__detail">

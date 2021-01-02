@@ -7,7 +7,7 @@ export const StyledProjects = styled.section`
 	padding: 2em 0;
 	color: var(--clr-white);
 
-	.projects h3 {
+	h3 {
 		text-transform: uppercase;
 		font-size: 2em;
 		color: var(--clr-white);

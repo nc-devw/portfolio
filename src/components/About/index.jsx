@@ -1,6 +1,7 @@
 import React from 'react'
 
 /* Utils */
+import strings from './language'
 import { GrReactjs, GrNode, GrMysql } from 'react-icons/gr'
 import { IoLogoJavascript } from 'react-icons/io'
 import { SiRedux, SiPostgresql, SiBootstrap, SiPhp, SiLaravel } from 'react-icons/si'
@@ -8,21 +9,21 @@ import { SiRedux, SiPostgresql, SiBootstrap, SiPhp, SiLaravel } from 'react-icon
 /* Styles */
 import { StyledAbout } from '../../styles/styled_about'
 
-const About = () => {
+const About = ({ language }) => {
 	return (
 		<StyledAbout id="about">
-			<h3 className="about__title">My skills</h3>
-				<div className="about__skills">
-					<span><GrReactjs /></span>
-					<span><IoLogoJavascript /></span>
-					<span><GrNode /></span>
-					<span><SiRedux/></span>
-					<span><SiPostgresql /></span>
-					<span><GrMysql /></span>
-					<span><SiBootstrap/></span>
-					<span><SiPhp/></span>
-					<span><SiLaravel/></span>
-				</div>
+			<h3 className="about__title">{strings[language].title}</h3>
+			<div className="about__skills">
+				<span><GrReactjs /></span>
+				<span><IoLogoJavascript /></span>
+				<span><GrNode /></span>
+				<span><SiRedux /></span>
+				<span><SiPostgresql /></span>
+				<span><GrMysql /></span>
+				<span><SiBootstrap /></span>
+				<span><SiPhp /></span>
+				<span><SiLaravel /></span>
+			</div>
 		</StyledAbout>
 	)
 }
