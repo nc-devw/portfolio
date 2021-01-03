@@ -37,13 +37,14 @@ const Navbar = ({ language, setLanguage, theme, setTheme }) => {
 					<span>{strings[language].language}</span>
 					<ul onClick={handleLanguage}>
 						<li>
-							<a id="en" className={language === 'en' ? 'selected' : null}>
+							<button id="en" className={language === 'en' ? 'selected' : null}>
 								{strings[language].language_en}
-							</a> </li>
+							</button>
+						</li>
 						<li>
-							<a id="es" className={language === 'es' ? 'selected' : null}>
+							<button id="es" className={language === 'es' ? 'selected' : null}>
 								{strings[language].language_es}
-							</a>
+							</button>
 						</li>
 					</ul>
 				</Dropdown>

@@ -16,7 +16,7 @@ const Projects = ({ language }) => {
 					Eveniet adipisci laudantium delectus harum</span>
 					</div>
 					<div className="project__buttons">
-						<Button>In progress...</Button>
+						<Button color={'warning'}>In progress...</Button>
 						{/* <Button>View Code</Button>
 						<Button>Open Project</Button> */}
 					</div>
@@ -33,7 +33,7 @@ const Projects = ({ language }) => {
 					Eveniet adipisci laudantium </span>
 					</div>
 					<div className="project__buttons">
-						<Button>In progress...</Button>
+						<Button color={'warning'}>In progress...</Button>
 						{/* <Button>View Code</Button>
 						<Button>Open Project</Button> */}
 					</div>

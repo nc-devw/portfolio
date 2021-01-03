@@ -27,7 +27,7 @@ export const StyledHome = styled.section`
 			margin: 0;
 			font-size: 4em;
 		}
-		span {
+		h4 {
 			margin: 0;
 			font-size: 1.5em;
 			font-weight: 700;
@@ -60,5 +60,9 @@ export const StyledHome = styled.section`
 			color: var(--clr-primary);
 		}
 
+	}
+
+	@media(max-width: 850px){
+		min-height: calc(100vh - 196px);
 	}
 `

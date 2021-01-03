@@ -80,6 +80,9 @@ export const StyledAbout = styled.section`
 
 	
 	@media(max-width: 850px){
+		h3{
+			text-align: center;
+		}
 		.about__skills span {
 			margin: .5em 1em;
 		}

@@ -18,7 +18,7 @@ export const StyledProjects = styled.section`
 		display: flex;
 		justify-content: space-between;
 		border-radius: 1em;
-		padding: 2em;
+		padding: 0 2em;
 		margin: .5em 0 2em 0;
 
 		.project__info{
@@ -55,8 +55,15 @@ export const StyledProjects = styled.section`
 	}
 
 	@media(max-width: 850px){
-		.project__buttons > button + button{
-			margin: 1em 0 0;
+		h3{
+			text-align: center;
+		}
+		.project{
+			flex-direction: column;
+			text-align: center;
+			.project__buttons{
+			margin: 1em 0;
+		}
 		}
 	}
 `

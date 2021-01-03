@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { StyledContact } from '../../styles/styled_contact';
 import { Button } from '../../styles/styled_global';
 import { useToasts } from 'react-toast-notifications'

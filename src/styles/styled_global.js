@@ -87,13 +87,13 @@ export const Button = styled.button`
 		overflow: hidden;
 		line-height: 1;
 		padding: 12px 32px;
-		border: 2px solid var(--clr-primary);
+		border: ${props => props.color ? `2px solid var(--clr-${props.color})` : '2px solid var(--clr-primary)'};
 		cursor: pointer;
 		background: transparent;
 		color: currentColor;
 
 		&:hover {
-			background-color: var(--clr-primary);
+			background-color: ${props => props.color ? `var(--clr-${props.color})` : 'var(--clr-primary)'};
 		}
 `
 
@@ -113,8 +113,8 @@ export const Dropdown = styled.li`
 			-webkit-column-break-inside: avoid;
 			page-break-inside: avoid;
 
-			a{ border-radius: .4em }
-			&:last-of-type a { border-radius: .4em }
+			button{ border-radius: .4em }
+			&:last-of-type button { border-radius: .4em }
 		}
 	}
 
@@ -160,7 +160,7 @@ export const Dropdown = styled.li`
 		}
 
 
-		a {
+		button {
 			text-align: center;
 			display: block;
 			width: 100%;

@@ -15,7 +15,7 @@ const Home = ({ language }) => {
 		<StyledHome id="home">
 			<div className="home__info">
 				<h3>{strings[language].title}</h3>
-				<span>Full Stack Web Developer</span>
+				<h4>Full Stack Web Developer</h4>
 				<p>{strings[language].description}</p>
 				<ul>
 					<li><a href="https://github.com/nc-devw" target="_blank" rel="noreferrer"><AiFillGithub /></a></li>
