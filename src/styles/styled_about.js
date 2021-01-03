@@ -78,4 +78,11 @@ export const StyledAbout = styled.section`
 		fill: #f72c1f;
 	}
 
+	
+	@media(max-width: 850px){
+		.about__skills span {
+			margin: .5em 1em;
+		}
+	}
+
 `

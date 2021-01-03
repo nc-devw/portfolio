@@ -11,6 +11,7 @@ import Projects from './components/Projects';
 import { ButtonTop, StyledGlobal } from './styles/styled_global';
 import { darkTheme, lightTheme } from './styles/theme';
 import { BsChevronUp } from 'react-icons/bs';
+import { animateScroll } from 'react-scroll'
 
 function App() {
 	const [loading, setLoading] = useState(true)
@@ -36,11 +37,10 @@ function App() {
 		}
 	}
 	const scrollToTop = () => {
-		document.body.scrollTop = 0;
-		document.documentElement.scrollTop = 0;
+		animateScroll.scrollToTop()
 	}
 
-	if (loading) return <Loading handleLoading={handleLoading} />
+	if (loading) return <Loading theme={theme} handleLoading={handleLoading} language={language} />
 
 	return (
 		<>
@@ -53,7 +53,7 @@ function App() {
 				<Contact language={language} />
 			</div>
 			<Footer language={language} />
-			<ButtonTop ref={scrollButton} className="button__top" onClick={scrollToTop}>
+			<ButtonTop ref={scrollButton} onClick={scrollToTop}>
 				<BsChevronUp />
 			</ButtonTop>
 		</>

@@ -14,7 +14,7 @@ export const StyledContact = styled.section`
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		padding: 1.5em 1em;
+		padding: 1em 1em;
 		margin: .5em 0 0 0;
 		border-radius: 1em;
 	}

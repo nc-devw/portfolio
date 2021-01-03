@@ -34,4 +34,10 @@ export const StyledProjects = styled.section`
 	.project__buttons > button + button{
 		margin-left: 1em;
 	}
+
+	@media(max-width: 850px){
+		.project__buttons > button + button{
+			margin: 1em 0 0;
+		}
+	}
 `

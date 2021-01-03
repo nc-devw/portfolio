@@ -5,6 +5,7 @@ import { FiSun } from 'react-icons/fi'
 import { StyledNavbar } from '../../styles/styled_navbar'
 import { Dropdown } from '../../styles/styled_global'
 import strings from './language'
+import { Link } from 'react-scroll'
 
 const Navbar = ({ language, setLanguage, theme, setTheme }) => {
 
@@ -16,30 +17,19 @@ const Navbar = ({ language, setLanguage, theme, setTheme }) => {
 	}
 
 	const handleTheme = () => {
+		localStorage.setItem('theme', theme === 'dark' ? 'light' : 'dark')
 		setTheme(prev => prev === 'dark' ? 'light' : 'dark')
-	}
-
-	const handleLink = (ev) => {
-		document.getElementById(ev.target.dataset.value).scrollIntoView(false);
-		if (ev.target.dataset.value === 'about') {
-			window.scrollTo({
-				top: 800,
-				left: 100,
-				behavior: 'smooth'
-			})
-		}
 	}
 
 	return (
 		<StyledNavbar className="navbar">
 			<div className="navbar__logo">
-				<h1>{'<Ignacio Contreras />'}</h1>
+				<Link to="home" smooth={true} offset={-1000}>{'<Ignacio Contreras/>'}</Link>
 			</div>
 			<ul className="navbar__links">
-				<li><button data-value="home" onClick={handleLink}>{strings[language].home}</button></li>
-				<li><button data-value="about" onClick={handleLink}>{strings[language].skills}</button></li>
-				<li><button data-value="projects" onClick={handleLink}>{strings[language].projects}</button></li>
-				<li><button data-value="contact" onClick={handleLink}>{strings[language].contact}</button></li>
+				<li><Link to="about" smooth={true} offset={-175}>{strings[language].skills}</Link></li>
+				<li><Link to="projects" smooth={true} offset={-175}>{strings[language].projects}</Link></li>
+				<li><Link to="contact" smooth={true} offset={-180}>{strings[language].contact}</Link></li>
 			</ul>
 			<ul className="navbar__options">
 				<Dropdown>

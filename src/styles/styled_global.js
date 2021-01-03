@@ -41,7 +41,43 @@ export const ButtonTop = styled.button`
 	fill: var(--clr-white);
 	width: 30px;
 	height: 30px;
+	}
+	@media (max-width:850px){
+		svg {
+			width: 20px;
+			height: 20px;
+		}	
+	}
 }
+`
+
+export const StyledLoading = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	color: ${props => props.theme === 'dark' ? 'var(--clr-white)' : 'var(--clr-dark)'};
+	background-color: ${props => props.theme === 'dark' ? 'var(--clr-dark)' : 'var(--clr-white)'};
+
+	svg {
+		width: 200px;
+		height: 200px;
+	}
+
+	span {
+		margin-top: .5em;
+		font-size: 2em;
+		font-weight: 700;
+	}
+	.welcome {
+		display: inline;
+		padding-left: .25em;
+		svg {
+			width: 30px;
+			height: 30px;
+		}
+	}
 `
 
 export const Button = styled.button`
