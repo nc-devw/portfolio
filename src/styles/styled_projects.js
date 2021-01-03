@@ -16,23 +16,42 @@ export const StyledProjects = styled.section`
 	.project {
 		width: 100%;
 		display: flex;
-		flex-direction: column;
+		justify-content: space-between;
 		border-radius: 1em;
 		padding: 2em;
 		margin: .5em 0 2em 0;
-	}
 
-	.project__title {
-		font-size: 1.5em;
-		margin-bottom: .5em;
-	}
+		.project__info{
+			flex: 1;
+			margin-right: 1em;
+		}
 
-	.project__detail {
-		margin-bottom: .75em;
-	}
+		.project__img{
+			flex: 1;
+			border: 2px solid var(--clr-primary);
+			border-radius: 1em;
+			overflow: hidden;
+			transition: transform .2s ease;
+			&:hover{
+					transform: scale(1.05);
+			}
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.project__title {
+			font-size: 1.5em;
+			margin-bottom: .5em;
+		}
 
-	.project__buttons > button + button{
-		margin-left: 1em;
+		.project__detail {
+			margin-bottom: .75em;
+		}
+
+		.project__buttons > button + button{
+			margin-left: 1em;
+		}
 	}
 
 	@media(max-width: 850px){
