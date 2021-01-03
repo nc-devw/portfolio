@@ -48,7 +48,6 @@ export const ButtonTop = styled.button`
 			height: 20px;
 		}	
 	}
-}
 `
 
 export const StyledLoading = styled.div`
