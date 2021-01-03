@@ -7,12 +7,10 @@ export const StyledAbout = styled.section`
 	justify-content: center;
 	padding: 2em 0;
 
-	.about__title {
-		text-align: left;
+	h3 {
 		text-transform: uppercase;
-		margin: .5em 0;
 		font-size: 2em;
-		color: var(--clr-white)
+		margin-bottom: .5em;
 	}
 
 	.about__skills {
@@ -31,12 +29,53 @@ export const StyledAbout = styled.section`
 	.about__skills span svg {
 		width: 100px;
 		height: 100px;
-		fill: var(--clr-middle)
+		fill: var(--clr-middle);
+		transition: all 0.25s ease;
+	}
+	#react svg:hover {
+		fill: #61dafb;
 	}
 
-	.about__skills span svg:hover {
-		width: 100px;
-		height: 100px;
-		fill: var(--clr-white)
+	#node svg:hover {
+		fill: #43853d;
 	}
+
+	#js svg:hover {
+		fill: #efd81d;
+	}
+
+	#redux svg:hover {
+		fill: #7747bc;
+	}
+
+	#express svg:hover {
+		fill: #1B1A1F;
+		/* random */
+	}
+
+	#sequelize svg:hover {
+		fill: #03afef;
+	}
+
+	#postgresql svg:hover {
+		fill: #305e8b;
+	}
+
+	#mariadb svg:hover {
+		fill: #005e86;
+	}
+
+	#bootstrap svg:hover {
+		fill: #533b78;
+	}
+
+	#php svg:hover {
+		fill: #7377ad;
+		filter: saturate(2);
+	}
+
+	#laravel svg:hover {
+		fill: #f72c1f;
+	}
+
 `

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '../../styles/styled_global'
 import { StyledProjects } from '../../styles/styled_projects'
 import strings from './language'
 const Projects = ({ language }) => {
@@ -12,8 +13,8 @@ const Projects = ({ language }) => {
 					Eveniet adipisci laudantium delectus harum</span>
 				</div>
 				<div className="project__buttons">
-					<button>View Code</button>
-					<button>Open Project</button>
+					<Button>View Code</Button>
+					<Button>Open Project</Button>
 				</div>
 			</div>
 			<div className="project">
@@ -23,8 +24,8 @@ const Projects = ({ language }) => {
 					Eveniet adipisci laudantium </span>
 				</div>
 				<div className="project__buttons">
-					<button>View Code</button>
-					<button>Open Project</button>
+					<Button>View Code</Button>
+					<Button>Open Project</Button>
 				</div>
 			</div>
 			<div className="project">
@@ -34,7 +35,7 @@ const Projects = ({ language }) => {
 					Eveniet adipisci laudantium delectus harum neque</span>
 				</div>
 				<div className="project__buttons">
-					<button>View Code</button>
+					<Button>View Code</Button>
 				</div>
 			</div>
 		</StyledProjects>

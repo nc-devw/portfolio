@@ -1,21 +1,34 @@
 import React from 'react'
 import { MdLanguage } from 'react-icons/md'
 import { BsMoon } from 'react-icons/bs'
+import { FiSun } from 'react-icons/fi'
 import { StyledNavbar } from '../../styles/styled_navbar'
 import { Dropdown } from '../../styles/styled_global'
 import strings from './language'
 
-const Navbar = ({ language, setLanguage }) => {
+const Navbar = ({ language, setLanguage, theme, setTheme }) => {
 
 	const handleLanguage = (ev) => {
-		setLanguage(ev.target.id);
-		localStorage.setItem('language', ev.target.id)
+		if (ev.target.id) {
+			setLanguage(ev.target.id);
+			localStorage.setItem('language', ev.target.id)
+		}
 	}
+
 	const handleTheme = () => {
-
+		setTheme(prev => prev === 'dark' ? 'light' : 'dark')
 	}
 
-	console.log(language);
+	const handleLink = (ev) => {
+		document.getElementById(ev.target.dataset.value).scrollIntoView(false);
+		if (ev.target.dataset.value === 'about') {
+			window.scrollTo({
+				top: 800,
+				left: 100,
+				behavior: 'smooth'
+			})
+		}
+	}
 
 	return (
 		<StyledNavbar className="navbar">
@@ -23,10 +36,10 @@ const Navbar = ({ language, setLanguage }) => {
 				<h1>{'<Ignacio Contreras />'}</h1>
 			</div>
 			<ul className="navbar__links">
-				<li><a href="#home">{strings[language].home}</a></li>
-				<li><a href="#about">{strings[language].skills}</a></li>
-				<li><a href="#projects">{strings[language].projects}</a></li>
-				<li><a href="#contact">{strings[language].contact}</a></li>
+				<li><button data-value="home" onClick={handleLink}>{strings[language].home}</button></li>
+				<li><button data-value="about" onClick={handleLink}>{strings[language].skills}</button></li>
+				<li><button data-value="projects" onClick={handleLink}>{strings[language].projects}</button></li>
+				<li><button data-value="contact" onClick={handleLink}>{strings[language].contact}</button></li>
 			</ul>
 			<ul className="navbar__options">
 				<Dropdown>
@@ -46,7 +59,7 @@ const Navbar = ({ language, setLanguage }) => {
 				</Dropdown>
 				<li>
 					<button onClick={handleTheme}>
-						<BsMoon />
+						{theme === 'dark' ? <BsMoon /> : <FiSun />}
 						<span>{strings[language].theme}</span>
 					</button>
 				</li>

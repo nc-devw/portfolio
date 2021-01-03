@@ -19,23 +19,30 @@ export const StyledNavbar = styled.nav`
 		align-items: center;
 		justify-content: center;
 		list-style-type: none;
+
+		li {
+			margin: 0 1em;
+			svg {
+				width: 30px;
+				height: 30px;
+				stroke: var(--clr-white);
+				fill: var(--clr-white);
+				
+			}
+			button {
+				background: transparent;
+				border: none;
+				font-size: 1em;
+				color: var(--clr-white);
+				cursor: pointer;
+				&:focus {
+					outline: none;
+				}
+			}
+		}
 	}
 
-	.navbar__links li svg {
-		width: 30px;
-		height: 30px;
-		stroke: var(--clr-white);
-		fill: var(--clr-white);
-	}
 
-	.navbar__links li {
-		margin: 0 1em;
-	}
-
-	.navbar__links li a {
-		text-decoration: none;
-		color: var(--clr-white);
-	}
 
 	.navbar__options {
 			color: var(--clr-white);

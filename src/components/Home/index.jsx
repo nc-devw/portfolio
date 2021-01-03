@@ -12,7 +12,7 @@ import strings from './language'
 
 const Home = ({ language }) => {
 	return (
-		<StyledHome className="home" id="home">
+		<StyledHome id="home">
 			<div className="home__info">
 				<h3>{strings[language].title}</h3>
 				<span>Full Stack Web Developer</span>

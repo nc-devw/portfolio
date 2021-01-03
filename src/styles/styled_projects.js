@@ -10,21 +10,16 @@ export const StyledProjects = styled.section`
 	h3 {
 		text-transform: uppercase;
 		font-size: 2em;
-		color: var(--clr-white);
+		margin-bottom: .5em;
 	}
 
 	.project {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
-		background-color: var(--clr-dark-2);
 		border-radius: 1em;
 		padding: 2em;
 		margin: .5em 0 2em 0;
-	}
-
-	.project:hover {
-		transform: translateY(-5px);
 	}
 
 	.project__title {
@@ -36,15 +31,7 @@ export const StyledProjects = styled.section`
 		margin-bottom: .75em;
 	}
 
-	.project__buttons button {
-		padding: .5em 1em;
-		border-radius: 2em;
-		border: none;
-		background-color: var(--clr-middle);
-		margin: 0 .5em;
-	}
-
-	.project__buttons button:hover {
-		background-color: var(--clr-white);
+	.project__buttons > button + button{
+		margin-left: 1em;
 	}
 `

@@ -3,7 +3,6 @@ import { StyledFooter } from '../../styles/styled_footer';
 import strings from './language'
 
 const Footer = ({ language }) => {
-	console.log(strings);
 	return (
 		<StyledFooter className="footer">
 			<div className="footer__copyright">

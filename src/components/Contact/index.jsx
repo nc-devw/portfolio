@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyledContact } from '../../styles/styled_contact';
+import { Button } from '../../styles/styled_global';
 import strings from './language'
 const Contact = ({ language }) => {
 	return (
@@ -21,7 +22,9 @@ const Contact = ({ language }) => {
 						<textarea name="message" placeholder="Message"></textarea>
 					</label>
 				</div>
-				<input className="contact__form-button" type="submit" value={strings[language].submit} />
+				<Button className="contact__form-button" type="submit">
+					{strings[language].submit}
+				</Button>
 			</form>
 		</StyledContact>
 	)

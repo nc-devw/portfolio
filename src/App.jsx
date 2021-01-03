@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 
 /* Components */
 import About from './components/About';
@@ -8,28 +8,55 @@ import Home from './components/Home';
 import Loading from './components/Loading';
 import Navbar from './components/Navbar'
 import Projects from './components/Projects';
+import { ButtonTop, StyledGlobal } from './styles/styled_global';
+import { darkTheme, lightTheme } from './styles/theme';
+import { BsChevronUp } from 'react-icons/bs';
 
 function App() {
 	const [loading, setLoading] = useState(true)
 	const [language, setLanguage] = useState(localStorage.getItem('language') || 'es');
+	const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
+	const scrollButton = useRef();
+	window.onscroll = function () { scrollFunction() };
+	const scrollDistance = 700;
 
 	const handleLoading = () => {
 		setLoading(false);
 	}
+
+	const scrollFunction = () => {
+		if (scrollButton.current) {
+			if (document.body.scrollTop > scrollDistance || document.documentElement.scrollTop > scrollDistance) {
+				scrollButton.current.style.pointerEvents = 'auto';
+				scrollButton.current.style.opacity = '100';
+			} else {
+				scrollButton.current.style.pointerEvents = 'none';
+				scrollButton.current.style.opacity = '0';
+			}
+		}
+	}
+	const scrollToTop = () => {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}
+
 	if (loading) return <Loading handleLoading={handleLoading} />
 
-
 	return (
-		<div className="app">
-			<Navbar language={language} setLanguage={setLanguage} />
+		<>
+			<StyledGlobal theme={theme === 'light' ? lightTheme : darkTheme} />
+			<Navbar language={language} setLanguage={setLanguage} theme={theme} setTheme={setTheme} />
 			<div className="container">
 				<Home language={language} />
-				<About language={language} />
+				<About />
 				<Projects language={language} />
 				<Contact language={language} />
 			</div>
 			<Footer language={language} />
-		</div>
+			<ButtonTop ref={scrollButton} className="button__top" onClick={scrollToTop}>
+				<BsChevronUp />
+			</ButtonTop>
+		</>
 	);
 }
 
