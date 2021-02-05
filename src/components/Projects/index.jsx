@@ -15,8 +15,8 @@ const Projects = ({ language }) => {
 						<span>{strings[language].detail}</span>
 					</div>
 					<div className="project__buttons">
-						<Button>{strings[language].viewCode}</Button>
-						<Button><a href="https://ecommerce-ft07-g07.vercel.app/">{strings[language].viewDemo}</a></Button>
+						<Button><a href="https://github.com/nc-devw/GamingHub">{strings[language].viewCode}</a></Button>
+						<Button><a href="https://ecommerce-ft07-g07.vercel.app">{strings[language].viewDemo}</a></Button>
 					</div>
 				</div>
 				<div className="project__img">
