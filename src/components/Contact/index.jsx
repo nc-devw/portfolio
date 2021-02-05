@@ -8,7 +8,7 @@ import emailjs from 'emailjs-com'
 const Contact = ({ language }) => {
 
 	const { REACT_APP_SERVICE, REACT_APP_TEMPLATE, REACT_APP_USER } = process.env;
-
+	
 	const { addToast } = useToasts()
 
 	const handleSubmit = (ev) => {
@@ -33,17 +33,17 @@ const Contact = ({ language }) => {
 			<form className="contact__form" onSubmit={handleSubmit}>
 				<div className="contact__form-control">
 					<label>
-						<input type="text" name="name" placeholder="Your name" required />
+						<input type="text" name="name" placeholder={strings[language].name} required />
 					</label>
 				</div>
 				<div className="contact__form-control">
 					<label>
-						<input type="email" name="email" placeholder="Email Address" required />
+						<input type="email" name="email" placeholder={strings[language].email} required />
 					</label>
 				</div>
 				<div className="contact__form-control textarea">
 					<label>
-						<textarea name="message" placeholder="Message" required></textarea>
+						<textarea name="message" placeholder={strings[language].message} required></textarea>
 					</label>
 				</div>
 				<Button className="contact__form-button" type="submit">
