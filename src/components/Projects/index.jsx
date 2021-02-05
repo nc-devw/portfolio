@@ -3,6 +3,7 @@ import { Button } from "../../styles/styled_global";
 import { StyledProjects } from "../../styles/styled_projects";
 import strings from "./language";
 import ecommercePic from "../../assets/img/ecommerce.jpg";
+import quizmePic from "../../assets/img/quizmeapp.png";
 const Projects = ({ language }) => {
 	return (
 		<StyledProjects id="projects">
@@ -32,8 +33,8 @@ const Projects = ({ language }) => {
 						<Button color='warning'>{strings[language].inProcess}</Button>
 					</div>
 				</div>
-				<div className="project__img">
-					<img src={ecommercePic} alt="Pic Ecommerce" />
+				<div className="project__img quizme">
+					<img src={quizmePic} alt="Pic Quizme App" />
 				</div>
 			</div>
 		</StyledProjects>

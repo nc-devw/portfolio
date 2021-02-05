@@ -39,6 +39,10 @@ export const StyledProjects = styled.section`
 				width: 100%;
 				height: 100%;
 			}
+
+		}
+		.quizme{
+			border: none;
 		}
 		.project__title {
 			font-size: 1.5em;
