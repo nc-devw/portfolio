@@ -92,6 +92,11 @@ export const Button = styled.button`
 		background: transparent;
 		color: currentColor;
 
+		a{
+			text-decoration: none;
+			color: currentColor;
+		}
+
 		&:hover {
 			background-color: ${props => props.color ? `var(--clr-${props.color})` : 'var(--clr-primary)'};
 		}

@@ -15,7 +15,21 @@ const Projects = ({ language }) => {
 					</div>
 					<div className="project__buttons">
 						<Button>{strings[language].viewCode}</Button>
-						<Button>{strings[language].viewDemo}</Button>
+						<Button><a href="https://ecommerce-ft07-g07.vercel.app/">{strings[language].viewDemo}</a></Button>
+					</div>
+				</div>
+				<div className="project__img">
+					<img src={ecommercePic} alt="Pic Ecommerce" />
+				</div>
+			</div>
+			<div className="project">
+				<div className="project__info">
+					<h4 className="project__title">Quizme App</h4>
+					<div className="project__detail">
+						<span>{strings[language].detail2}</span>
+					</div>
+					<div className="project__buttons">
+						<Button color='warning'>{strings[language].inProcess}</Button>
 					</div>
 				</div>
 				<div className="project__img">
