@@ -66,8 +66,11 @@ export const StyledProjects = styled.section`
 			flex-direction: column;
 			text-align: center;
 			.project__buttons{
-			margin: 1em 0;
-		}
+				margin: 1em 0;
+			}
+			.project__buttons > button + button{
+				margin: 1em 0;
+			}
 		}
 	}
 `
