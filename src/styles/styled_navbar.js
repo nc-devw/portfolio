@@ -51,8 +51,6 @@ export const StyledNavbar = styled.nav`
 		}
 	}
 
-
-
 	.navbar__options {
 		color: var(--clr-white);
 		list-style: none;
@@ -65,9 +63,9 @@ export const StyledNavbar = styled.nav`
 			width: 1.5em;
 			height: 1.5em;
 		}
-
 		& > li {
 			position: relative;
+			
 		}
 
 		& > li + li { margin-left: 3em; }
@@ -78,7 +76,19 @@ export const StyledNavbar = styled.nav`
 			align-items: center;
 			justify-content: center;
 			cursor: pointer;
+			.cv {
+				display: flex;
+				flex-direction: row;
+				font-size: 1.2em;
+				color: var(--clr-primary);
+				text-decoration: none;
+				
+				&:hover {
+					color: var(--clr-white);
+				}
+			}
 		}
+
 
 		li:hover { color: var(--clr-primary); }
 

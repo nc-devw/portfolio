@@ -36,6 +36,7 @@ export const StyledProjects = styled.section`
 					transform: scale(1.05);
 			}
 			img {
+				object-fit: cover;
 				width: 100%;
 				height: 100%;
 			}

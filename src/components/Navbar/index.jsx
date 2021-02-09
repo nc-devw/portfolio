@@ -2,8 +2,11 @@ import React from 'react'
 import { MdLanguage } from 'react-icons/md'
 import { BsMoon } from 'react-icons/bs'
 import { FiSun } from 'react-icons/fi'
+import { AiOutlineFileText } from 'react-icons/ai'	
 import { StyledNavbar } from '../../styles/styled_navbar'
 import { Dropdown } from '../../styles/styled_global'
+import resumeEn from '../../assets/ignaciocontrerasen.pdf'
+import resumeEs from '../../assets/ignaciocontrerases.pdf'
 import strings from './language'
 import { Link } from 'react-scroll'
 
@@ -32,6 +35,12 @@ const Navbar = ({ language, setLanguage, theme, setTheme }) => {
 				<li><Link to="contact" smooth={true} offset={-180}>{strings[language].contact}</Link></li>
 			</ul>
 			<ul className="navbar__options">
+				<li>
+					<a href={language === 'en' ? resumeEn : resumeEs} target='_blank' rel='noreferrer' className="cv">
+						<AiOutlineFileText/>
+						<span>CV</span>
+					</a>
+				</li>
 				<Dropdown>
 					<MdLanguage />
 					<span>{strings[language].language}</span>
