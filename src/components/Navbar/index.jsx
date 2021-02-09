@@ -36,10 +36,12 @@ const Navbar = ({ language, setLanguage, theme, setTheme }) => {
 			</ul>
 			<ul className="navbar__options">
 				<li>
-					<a href={language === 'en' ? resumeEn : resumeEs} target='_blank' rel='noreferrer' className="cv">
-						<AiOutlineFileText/>
-						<span>CV</span>
-					</a>
+					<button className="cv-button">
+						<a href={language === 'en' ? resumeEn : resumeEs} target='_blank' rel='noreferrer'>
+							<AiOutlineFileText/>
+							<span>CV</span>
+						</a>
+					</button>
 				</li>
 				<Dropdown>
 					<MdLanguage />
