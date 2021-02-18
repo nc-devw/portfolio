@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const StyledGlobal = createGlobalStyle`
 	body {
@@ -16,7 +16,7 @@ export const StyledGlobal = createGlobalStyle`
 			color:  ${({ theme }) => theme.text};
 		}
 	}
-`
+`;
 
 export const ButtonTop = styled.button`
 	pointer-events: none;
@@ -29,26 +29,26 @@ export const ButtonTop = styled.button`
 	background: var(--clr-primary);
 	color: var(--clr-white);
 	z-index: 80;
-	transition: opacity .2s ease;
+	transition: opacity 0.2s ease;
 	border-radius: 999em;
 	cursor: pointer;
 
 	&:hover {
-	background: var(--clr-primary);
+		background: var(--clr-primary);
 	}
 
 	svg {
-	fill: var(--clr-white);
-	width: 30px;
-	height: 30px;
+		fill: var(--clr-white);
+		width: 30px;
+		height: 30px;
 	}
-	@media (max-width:850px){
+	@media (max-width: 850px) {
 		svg {
 			width: 20px;
 			height: 20px;
-		}	
+		}
 	}
-`
+`;
 
 export const StyledLoading = styled.div`
 	display: flex;
@@ -56,8 +56,10 @@ export const StyledLoading = styled.div`
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	color: ${props => props.theme === 'dark' ? 'var(--clr-white)' : 'var(--clr-dark)'};
-	background-color: ${props => props.theme === 'dark' ? 'var(--clr-dark)' : 'var(--clr-white)'};
+	color: ${(props) =>
+		props.theme === 'dark' ? 'var(--clr-white)' : 'var(--clr-dark)'};
+	background-color: ${(props) =>
+		props.theme === 'dark' ? 'var(--clr-dark)' : 'var(--clr-white)'};
 
 	svg {
 		width: 200px;
@@ -65,50 +67,54 @@ export const StyledLoading = styled.div`
 	}
 
 	span {
-		margin-top: .5em;
+		margin-top: 0.5em;
 		font-size: 2em;
 		font-weight: 700;
 	}
 	.welcome {
 		display: inline;
-		padding-left: .25em;
+		padding-left: 0.25em;
 		svg {
 			width: 30px;
 			height: 30px;
 		}
 	}
-`
+`;
 
 export const Button = styled.button`
-		margin: 0 auto;
-		border-radius: 30px;
-		font-size: 16px;
-		font-weight: 700;
-		overflow: hidden;
-		line-height: 1;
-		padding: 12px 32px;
-		border: ${props => props.color ? `2px solid var(--clr-${props.color})` : '2px solid var(--clr-primary)'};
-		cursor: pointer;
-		background: transparent;
+	margin: 0 auto;
+	border-radius: 30px;
+	font-size: 16px;
+	font-weight: 700;
+	overflow: hidden;
+	line-height: 1;
+	padding: 12px 32px;
+	border: ${(props) =>
+		props.color
+			? `2px solid var(--clr-${props.color})`
+			: '2px solid var(--clr-primary)'};
+	cursor: pointer;
+	background: transparent;
+	color: currentColor;
+
+	a {
+		text-decoration: none;
 		color: currentColor;
+	}
 
-		a{
-			text-decoration: none;
-			color: currentColor;
-		}
-
-		&:hover {
-			background-color: ${props => props.color ? `var(--clr-${props.color})` : 'var(--clr-primary)'};
-		}
-`
+	&:hover {
+		background-color: ${(props) =>
+			props.color ? `var(--clr-${props.color})` : 'var(--clr-primary)'};
+	}
+`;
 
 export const Dropdown = styled.li`
 	position: relative;
-	padding-bottom: .8em;
-	margin-bottom: -.8em;
+	padding-bottom: 0.8em;
+	margin-bottom: -0.8em;
 	cursor: default;
 
-	.dropdown-columns{
+	.dropdown-columns {
 		columns: 3;
 		column-rule: 1px solid #ccc;
 		padding: 1em;
@@ -118,13 +124,17 @@ export const Dropdown = styled.li`
 			-webkit-column-break-inside: avoid;
 			page-break-inside: avoid;
 
-			button{ border-radius: .4em }
-			&:last-of-type button { border-radius: .4em }
+			button {
+				border-radius: 0.4em;
+			}
+			&:last-of-type button {
+				border-radius: 0.4em;
+			}
 		}
 	}
 
 	&:hover > ul {
-		display:block;
+		display: block;
 		list-style: none;
 	}
 
@@ -139,8 +149,8 @@ export const Dropdown = styled.li`
 		font-size: 0.9em;
 		color: var(--clr-dark);
 		background-color: var(--clr-white);
-		box-shadow: 0 0 20px rgba(0,0,0,.7);
-		border-radius: .4em;
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+		border-radius: 0.4em;
 		z-index: 10;
 
 		&::before {
@@ -158,12 +168,11 @@ export const Dropdown = styled.li`
 		& li {
 			margin: 0;
 			width: 100%;
-		
+
 			&:last-of-type a {
-				border-radius: 0 0 .3em .3em;
+				border-radius: 0 0 0.3em 0.3em;
 			}
 		}
-
 
 		button {
 			text-align: center;
@@ -175,7 +184,7 @@ export const Dropdown = styled.li`
 
 			&:hover {
 				background-color: var(--clr-middle);
-				color: var(--clr-white)
+				color: var(--clr-white);
 			}
 		}
 
@@ -184,11 +193,16 @@ export const Dropdown = styled.li`
 			font-size: 1.3em;
 			font-family: Poppins, Raleway, sans-serif;
 			font-weight: 900;
-			border-bottom: 1px solid #CCC;
-			padding-bottom: .5em;
-			margin-bottom: .5em !important;
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 0.5em;
+			margin-bottom: 0.5em !important;
 			text-align: center;
 		}
 	}
+`;
 
-`
+export const Flex = styled.div`
+	display: flex;
+	align-items: ${({ align }) => align || 'stretch'};
+	flex-direction: ${({ column }) => (column ? 'column' : 'row')};
+`;
