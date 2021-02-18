@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const StyledNavbar = styled.nav`
 	position: sticky;
@@ -17,8 +17,8 @@ export const StyledNavbar = styled.nav`
 		padding-left: 1em;
 		color: var(--clr-white);
 		cursor: pointer;
-		transition: color .25s ease;
-		&:hover{
+		transition: color 0.25s ease;
+		&:hover {
 			color: var(--clr-primary);
 		}
 	}
@@ -36,15 +36,14 @@ export const StyledNavbar = styled.nav`
 				height: 30px;
 				stroke: var(--clr-white);
 				fill: var(--clr-white);
-				
 			}
 			a {
 				text-decoration: none;
 				color: var(--clr-white);
 				cursor: pointer;
-				transition: color .25s ease;
+				transition: color 0.25s ease;
 
-				&:hover{
+				&:hover {
 					color: var(--clr-primary);
 				}
 			}
@@ -59,27 +58,29 @@ export const StyledNavbar = styled.nav`
 		justify-content: flex-end;
 		flex-basis: 300px;
 		padding-right: 1em;
-		svg{
+		svg {
 			width: 1.5em;
 			height: 1.5em;
 		}
 		& > li {
 			position: relative;
-			
 		}
 
-		& > li + li { margin-left: 3em; }
+		& > li + li {
+			margin-left: 3em;
+		}
 
-		li, li > button {
+		li,
+		li > button {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
 			cursor: pointer;
-			.cv-button{
+			.cv-button {
 				background-color: var(--clr-primary);
-				padding: .5em 1em;
-				border-radius: .5em;
+				padding: 0.5em 1em;
+				border-radius: 0.5em;
 				a {
 					display: flex;
 					flex-direction: row;
@@ -91,11 +92,11 @@ export const StyledNavbar = styled.nav`
 					background-color: var(--clr-primary-2);
 				}
 			}
-
 		}
 
-
-		li:hover { color: var(--clr-primary); }
+		li:hover {
+			color: var(--clr-primary);
+		}
 
 		button {
 			background: none;
@@ -105,17 +106,16 @@ export const StyledNavbar = styled.nav`
 		}
 	}
 
-	@media(max-width: 850px){
+	@media (max-width: 850px) {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		.navbar__logo{
-			margin-bottom: 1em;
-			flex-basis: 0;
+		.navbar__logo {
+			display: none;
 		}
-		.navbar__options{
+		.navbar__options {
 			margin-top: 1.5em;
 			flex-basis: 0;
 		}
 	}
-`
+`;
