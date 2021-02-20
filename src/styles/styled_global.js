@@ -68,7 +68,7 @@ export const StyledLoading = styled.div`
 
 	span {
 		margin-top: 0.5em;
-		font-size: 2em;
+		font-size: 1.8em;
 		font-weight: 700;
 	}
 	.welcome {

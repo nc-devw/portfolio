@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const StyledContact = styled.section`
 	display: flex;
@@ -15,19 +15,20 @@ export const StyledContact = styled.section`
 		flex-direction: column;
 		width: 100%;
 		padding: 1em 1em;
-		margin: .5em 0 0 0;
+		margin: 0.5em 0 0 0;
 		border-radius: 1em;
 	}
 
 	.contact__form-control {
-		margin: .5em .5em;
+		margin: 0.5em 0.5em;
 	}
 
-	.contact__form-control input, textarea {
+	.contact__form-control input,
+	textarea {
 		width: 100%;
 		height: 60px;
 		padding: 1em 1.5em;
-		margin: .5em 0;
+		margin: 0.5em 0;
 		border: 3px solid var(--clr-primary-2);
 		border-radius: 30px;
 		line-height: 1.6;
@@ -38,4 +39,10 @@ export const StyledContact = styled.section`
 		resize: none;
 		height: 150px;
 	}
-`
+
+	@media (max-width: 850px) {
+		h3 {
+			text-align: center;
+		}
+	}
+`;
